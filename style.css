@@ -1,1 +1,31 @@
+#stage{
+    background: transparent url(css_animation_exercise_stage.png) 0 0 no-repeat;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    position: relative;
+}
 
+#hero{
+    width: 75px;
+    height: 75px;
+    box-sizing: border-box;
+    border: dashed 1px red;
+    position: absolute;
+    top: 20px;
+    left:20px;
+    animation: line 17s linear infinite;
+}
+
+
+@keyframes line{
+    0% { top: 20px; left:20px;}
+    29% {top:20px; left:499px;}
+    41% {top:198px; left:499px;transform: none;}
+    44% {top:198px; left:269.5px;transform:rotate(45deg); }
+    47% {top:198px; left:269.5px;transform:rotate(45deg); border-color: red;}
+    61% {top: 205px; left:20px; transform:rotate(90deg); border-color: #0900BD; border-radius: 0px; width:75px; height: 75px; background: none; border: dashed 1px #0900BD;}
+    90% { top:442px; left:442px; width: 150px; height:150px; border-radius:  50%; background-image: radial-gradient(#FBDA61,#F76B1C); border: none;}
+    100% { top:442px; left:442px; width: 150px; height:150px; border-radius: 50%; background-image: radial-gradient(#FBDA61,#F76B1C); border: none;}
+}
+    
